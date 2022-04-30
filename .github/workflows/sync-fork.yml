@@ -35,6 +35,6 @@ jobs:
           merge_method: squash
           owner: JaseZiv
           head: gh-pages
-          base: master
+          base: gh-pages
           autoapprove: true
           
