@@ -29,7 +29,8 @@ jobs:
       - name: Fork Sync
         uses: tgymnich/fork-sync@v1.2.1
         with:
-          token: ${{ secrets.PERSONAL_TOKEN }}
+          github_token: ${{ secrets.PERSONAL_TOKEN }}
+          merge_method: squash
           owner: JaseZiv
           head: master
           base: master
