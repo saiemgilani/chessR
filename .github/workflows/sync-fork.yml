@@ -29,7 +29,7 @@ jobs:
       - name: Fork Sync
         uses: tgymnich/fork-sync@v1.2.1
         with:
-          token: 'github_token'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           owner: saiemgilani
           head: master
           base: master
