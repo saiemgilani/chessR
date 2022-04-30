@@ -29,7 +29,9 @@ jobs:
       - name: Fork Sync
         uses: tgymnich/fork-sync@v1.2.1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PERSONAL_TOKEN }}
           owner: JaseZiv
           head: master
           base: master
+          autoapprove: true
+          
