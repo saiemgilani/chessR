@@ -19,6 +19,8 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -26,4 +28,8 @@ jobs:
 
       - name: Fork Sync
         uses: tgymnich/fork-sync@v1.2.1
-
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
+          owner: saiemgilani
+          head: master
+          base: master
