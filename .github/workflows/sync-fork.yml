@@ -36,5 +36,3 @@ jobs:
           owner: JaseZiv
           head: gh-pages
           base: gh-pages
-          autoapprove: true
-          
